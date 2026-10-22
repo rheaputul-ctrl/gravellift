@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GravelLift | Lift it. Rinse it. Done.</title>
+<meta name="description" content="GravelLift is the removable aquarium gravel bed with built-in, air-driven filtration. Lift it out, rinse it, and set it back. Now available.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- reusable fish (echoes the logo's friendly fish; decorative) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="fish-pink" viewBox="0 0 120 70"><path d="M8 38 L30 22 L30 54 Z" fill="#F472B6"/><ellipse cx="68" cy="36" rx="46" ry="26" fill="#F9A8D4"/><path d="M80 14 Q92 36 80 58" fill="none" stroke="#BE185D" stroke-width="2.5" stroke-linecap="round"/><path d="M50 32 Q58 38 66 32" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round"/><path d="M96 38 Q102 44 108 38" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="fish-orange" viewBox="0 0 120 70"><path d="M112 36 L90 20 L90 52 Z" fill="#EA580C"/><ellipse cx="52" cy="36" rx="46" ry="26" fill="#F97316"/><path d="M40 14 Q28 36 40 58" fill="none" stroke="#9A3412" stroke-width="2.5" stroke-linecap="round"/><path d="M52 34 Q60 40 68 34" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round"/><path d="M12 38 Q18 44 24 38" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="status" role="note"><strong>Now available:</strong> GravelLift 10 for standard 10-gallon tanks, $54.99.</div>
+
+<header class="header">
+  <div class="container bar">
+    <a class="brand" href="#top" aria-label="GravelLift home"><img src="assets/logo.png" alt="" width="46" height="46"><span>GravelLift</span></a>
+    <nav class="nav" aria-label="Main">
+      <a class="shop" href="#product">Shop</a>
+      <a href="#how">How It Works</a>
+      <a href="#why">Why GravelLift</a>
+      <a href="#fit">Tank Fit Guide</a>
+      <a href="#support">Support</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn-primary btn-sm cta" href="#product">Shop now</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-label="Menu">
+    <button class="close" data-close aria-label="Close menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+    <a href="#product">Shop</a>
+    <a href="#how">How It Works</a>
+    <a href="#why">Why GravelLift</a>
+    <a href="#fit">Tank Fit Guide</a>
+    <a href="#support">Support</a>
+    <a href="#about">About</a>
+    <a class="btn btn-primary" href="#product" style="margin-top:12px;color:#fff">Shop now</a>
+  </div>
+</div>
+
+<main id="main">
+<!-- ========== HERO / LANDING ========== -->
+<section class="landing" id="top" aria-labelledby="hero-h">
+  <div class="rays" aria-hidden="true"></div>
+  <svg class="wv w1" viewBox="0 0 2880 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 20 480 100 720 60 C960 20 1200 100 1440 60 C1680 20 1920 100 2160 60 C2400 20 2640 100 2880 60 V120 H0 Z" fill="#ffffff"/></svg>
+  <svg class="wv w2" viewBox="0 0 2880 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 20 480 100 720 60 C960 20 1200 100 1440 60 C1680 20 1920 100 2160 60 C2400 20 2640 100 2880 60 V120 H0 Z" fill="#ffffff"/></svg>
+  <svg class="wv w3" viewBox="0 0 2880 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C240 20 480 100 720 60 C960 20 1200 100 1440 60 C1680 20 1920 100 2160 60 C2400 20 2640 100 2880 60 V120 H0 Z" fill="#0E7FA8"/></svg>
+  <div id="landBubbles" aria-hidden="true"></div>
+  <div class="lfish" style="top:14%;width:96px;animation-duration:24s" aria-hidden="true"><svg viewBox="0 0 120 70"><use href="#fish-pink"/></svg></div>
+  <div class="lfish" style="top:36%;width:76px;animation-duration:32s;animation-delay:-12s" aria-hidden="true"><svg viewBox="0 0 120 70"><use href="#fish-orange"/></svg></div>
+  <svg class="pebbles" id="landPebbles" viewBox="0 0 1440 220" preserveAspectRatio="xMidYMax slice" aria-hidden="true"></svg>
+  <div class="center">
+    <img class="big" src="assets/logo.png" alt="GravelLift logo: two smiling fish swimming above blue pebbles" width="440" height="440" fetchpriority="high">
+    <h1 id="hero-h">Lift it. Rinse it. Done.</h1>
+    <p class="hero-sub">The removable aquarium gravel bed with built-in filtration. A cleaner tank and a simpler life, now available.</p>
+    <div class="cta-row" style="justify-content:center;margin:0">
+      <a class="btn btn-primary" href="#product">Shop GravelLift 10</a>
+      <a class="btn btn-light" href="#how">See how it works</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STORY (dark) ========== -->
+<section class="story" id="story" aria-labelledby="story-h">
+  <div class="bubbles-bg" id="storyBubbles" aria-hidden="true"></div>
+  <div class="story-track" id="storyTrack">
+    <div class="story-sticky">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">See the design</p>
+          <h2 id="story-h">Meet the Gravel Bed That Lifts Out.</h2>
+          <p class="lead">One slab with a slotted plate, a pebble layer and an air-driven tube at each back corner. It all comes out together.</p>
+        </div>
+        <div class="story-grid">
+          <div>
+            <div class="stage" id="stage" role="img" aria-label="Interactive demonstration of GravelLift">
+              <figure class="s1 on" data-s="0"><img src="assets/model-clean.webp" alt="GravelLift slab installed in a transparent aquarium" loading="lazy"></figure>
+              <figure class="s2" data-s="1">
+                <img src="assets/base-clean.webp" alt="Close-up of the black slotted vent plate, pebble layer, base collar and nano-bubble diffuser" loading="lazy">
+                <span class="chip" style="left:5%;bottom:9%">Slotted vent plate</span>
+                <span class="chip" style="left:36%;top:14%">Nano-bubble diffuser + base collar</span>
+                <span class="chip" style="right:5%;bottom:24%">Pebble modules clip on</span>
+              </figure>
+              <figure class="s3" data-s="2">
+                <div class="holder" style="position:relative;width:100%">
+                  <img class="full" src="assets/a3-flow.webp" alt="Cross-section diagram of the air-driven tube showing the seven-step water flow path through the pebbles, under the plate, up the riser and back out the swivel nozzle" loading="lazy">
+                  <svg class="flow-svg" viewBox="0 0 2000 924" preserveAspectRatio="none" aria-hidden="true">
+                    <g class="flow-anim">
+                      <path class="dash" d="M510 590 V790 M613 590 V790 M716 590 V790 M818 590 V790 M921 590 V790 M1024 590 V790 M1126 590 V790 M1229 590 V790 M1331 590 V790"/>
+                      <path class="dash d2" d="M1300 797 H455"/>
+                      <path class="dash" d="M411 790 V262"/>
+                      <path class="dash d2" d="M545 236 C640 226 740 235 770 270 C810 330 845 430 850 520"/>
+                    </g>
+                  </svg>
+                </div>
+              </figure>
+              <figure class="s4" id="s4" data-s="3">
+                <div class="lift-a"><img src="assets/model-clean.webp" alt="" loading="lazy"></div>
+                <div class="lift-b"><img src="assets/liftout-clean.webp" alt="The slab and both attached tubes lifted out of the tank together while the airline stays in the tank" loading="lazy"></div>
+              </figure>
+            </div>
+            <div class="story-ctrl">
+              <button class="btn btn-light btn-sm" id="replay" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>Replay Demonstration</button>
+              <div class="progress" id="progress" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+              <span style="font-size:.82rem;opacity:.8">Illustrated model · scroll or tap a step</span>
+            </div>
+          </div>
+          <div class="steps" id="steps" role="tablist" aria-label="Demonstration steps" aria-orientation="vertical">
+            <button class="step-btn" role="tab" aria-selected="true" data-s="0"><span class="n">1</span><span><b>Installed</b><span class="d">GravelLift rests flat on the tank floor, held above the glass by standoff feet. A clear airlift tube stands at each back corner.</span></span></button>
+            <button class="step-btn" role="tab" aria-selected="false" data-s="1"><span class="n">2</span><span><b>Inside the design</b><span class="d">Pebble modules clip onto a rigid black plate with mechanical anchors, so they hold when wet but can be replaced one by one. Slots let water and air through; standoff feet leave a water channel underneath.</span></span></button>
+            <button class="step-btn" role="tab" aria-selected="false" data-s="2"><span class="n">3</span><span><b>Water circulation</b><span class="d">Air bubbles lift water up each tube and out the swivel nozzle. That pulls tank water down through the pebbles and slots, under the plate, and back to the riser.</span></span></button>
+            <button class="step-btn" role="tab" aria-selected="false" data-s="3"><span class="n">4</span><span><b>Lift-out cleaning</b><span class="d">Unclip the airline, unfold the handles, and lift the whole slab with both tubes attached. The airline and check valve stay with the tank.</span></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg style="display:block;width:100%;height:auto;margin-bottom:-1px" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 V40 C1200 90 960 0 720 40 C480 80 240 6 0 44 Z" fill="#fff" transform="translate(0,0)" opacity="0"/><path d="M0 44 C240 6 480 80 720 40 C960 0 1200 90 1440 40 V80 H0 Z" fill="#fff"/></svg>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="section how" id="how" aria-labelledby="how-h">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-h">Less Time Cleaning. More Time Enjoying.</h2>
+      <p class="lead">Three simple steps turn a long gravel-cleaning session into a few minutes of work.</p>
+    </div>
+    <div class="how-steps">
+      <article class="how-card c1 reveal">
+        <div class="pic zoom"><img src="assets/base-clean.webp" alt="Close-up Illustration of the air inlet port and quick-release coupling at the base of an airlift tube" loading="lazy" style="object-position:20% 85%;transform:scale(1.5);transform-origin:20% 85%"></div>
+        <div class="body"><span class="num" aria-hidden="true">1</span><h3>Disconnect</h3><p>Turn off the air pump and release the airline connection. The quick-release coupling lets the slab separate from the airline.</p></div>
+      </article>
+      <article class="how-card c2 reveal">
+        <div class="pic"><img src="assets/liftout-clean.webp" alt="Illustration of the GravelLift slab with both tubes lifted out of the tank as one piece"></div>
+        <div class="body"><span class="num" aria-hidden="true">2</span><h3>Lift</h3><p>Unfold the handles and lift the GravelLift bed out as one piece. Both tubes come with it. No scooping, no vacuuming loose gravel.</p></div>
+      </article>
+      <article class="how-card c3 reveal">
+        <div class="pic"><div class="drops" aria-hidden="true"><i style="left:22%;animation-delay:0s"></i><i style="left:38%;animation-delay:.5s"></i><i style="left:54%;animation-delay:1s"></i><i style="left:70%;animation-delay:.25s"></i></div><img src="assets/model-clean.webp" alt="Illustration of the GravelLift slab ready to be placed back into the aquarium" loading="lazy"></div>
+        <div class="body"><span class="num" aria-hidden="true">3</span><h3>Rinse &amp; Replace</h3><p>Rinse the removable bed under a faucet or in a tub, then lower it back into the aquarium and reconnect the airline.</p></div>
+      </article>
+    </div>
+    <div class="demo-row"><button class="btn btn-primary" id="demoBtn" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Watch the Full Demonstration</button></div>
+  </div>
+</section>
+
+<!-- ========== PRODUCT ========== -->
+<section class="section bg-mist" id="product" aria-labelledby="product-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">The product</p>
+      <h2 id="product-h">GravelLift 10, up close.</h2>
+      <p class="lead">Tap the markers to explore every part of the design. Every image is an illustrated model of the product.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Product views" id="viewTabs">
+      <button class="tab" role="tab" aria-selected="true" data-v="model">Full model</button>
+      <button class="tab" role="tab" aria-selected="false" data-v="lift">Lift-out</button>
+      <button class="tab" role="tab" aria-selected="false" data-v="base">Base module</button>
+      <button class="tab" role="tab" aria-selected="false" data-v="top">Nozzle &amp; riser</button>
+      <button class="tab" role="tab" aria-selected="false" data-v="flow">Water flow</button>
+    </div>
+    <div class="viewer">
+      <div class="viewer-img"><span class="badge tl" style="top:14px;left:14px">Product illustration</span><div class="holder" id="holder"></div></div>
+      <div>
+        <h3 id="viewTitle" style="margin-bottom:12px"></h3>
+        <ul class="legend" id="legend"></ul>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="card accent">
+        <span class="pill plan" style="background:rgba(255,255,255,.2);color:#fff">Available now</span>
+        <h3 style="margin-top:14px;font-size:1.6rem">GravelLift 10</h3>
+        <p class="price">$54.99</p>
+        <ul class="ticks">
+          <li>Fits a standard 10-gallon tank (about 20 × 10 in footprint)</li>
+          <li>Natural Mix colorway: tan, orange, brown and black pebbles</li>
+          <li>Two airlift assemblies with replaceable ceramic nano-bubble diffusers</li>
+          <li>90-day satisfaction guarantee</li>
+        </ul>
+        <p style="font-size:.95rem"><strong style="color:#fff">External air pump not included.</strong> It works with a standard air pump you may already own.</p>
+        <button class="btn btn-light" type="button" data-buy="GravelLift 10">Buy GravelLift 10</button>
+      </div>
+      <div class="table-wrap">
+        <table class="specs">
+          <caption class="sr-only">GravelLift 10 specifications</caption>
+          <tbody>
+            <tr><th scope="row">Fits</th><td>Standard 10-gallon aquarium, about 20 × 10 in floor footprint</td></tr>
+            <tr><th scope="row">Vent plate</th><td>Rigid, injection-molded black polypropylene; slotted for water flow, ribbed for stiffness, standoff feet, two fold-down handles</td></tr>
+            <tr><th scope="row">Pebble layer</th><td>Pre-colored silicone pebble modules (Natural Mix) that clip onto the plate with mechanical anchors, replaceable individually</td></tr>
+            <tr><th scope="row">Airlift (×2)</th><td>Clear riser tube, base collar, replaceable ceramic nano-bubble diffuser, flow-control dial, swivel outflow nozzle</td></tr>
+            <tr><th scope="row">Air supply</th><td>Standard external air pump (sold separately); inline check valve; quick-release coupling</td></tr>
+            <tr><th scope="row">In the water</th><td>No electrical parts</td></tr>
+            <tr><th scope="row">Weight, height, flow rate</th><td><span class="placeholder">Add final weight, height and flow rate</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px">Replacement parts &amp; bundles</h3>
+    <div class="access-grid">
+      <article class="acc"><div class="pic"><div style="background-image:url(assets/base-clean.webp);background-size:300% auto;background-position:27% 52%" role="img" aria-label="Illustration detail of the ceramic nano-bubble diffuser and base collar"></div></div><div class="info"><h4>Nano-Bubble Diffuser 2-Pack</h4><p>Replaces clogged diffusers every few months.</p><div class="price">$9.99</div></div></article>
+      <article class="acc"><div class="pic"><div style="background-image:url(assets/top-clean.webp);background-size:220% auto;background-position:47% 25%" role="img" aria-label="Illustration detail of a riser tube top housing and swivel nozzle"></div></div><div class="info"><h4>Airlift Tube Kit</h4><p>Two risers, caps and nozzles. Replaces cracked or cloudy tubes.</p><div class="price">$14.99</div></div></article>
+      <article class="acc"><div class="pic"><div style="background-image:url(assets/top-clean.webp);background-size:300% auto;background-position:0% 21%" role="img" aria-label="Illustration detail of the airline and inline check valve"></div></div><div class="info"><h4>Airline + Check Valve Kit</h4><p>Fresh airline and backflow protection.</p><div class="price">$7.99</div></div></article>
+      <article class="acc"><div class="pic"><div style="background-image:url(assets/base-clean.webp);background-size:300% auto;background-position:27% 52%" role="img" aria-label="Illustration detail representing the diffuser and airline spare parts"></div></div><div class="info"><h4>Starter Bundle Add-On</h4><p>Diffuser pack + airline kit: spare parts bought with a new slab.</p><div class="price">$14.99</div></div></article>
+    </div>
+    <div class="bundle">
+      <div class="pic"><img src="assets/model-clean.webp" alt="Illustration of the GravelLift 10 slab" loading="lazy"></div>
+      <div>
+        <span class="pill plan" style="background:rgba(255,255,255,.18);color:#fff">Bundle</span>
+        <h3 style="margin-top:10px">GravelLift 10 Starter Bundle</h3>
+        <p class="price" style="font-size:2rem">$69.98 </p>
+        <p style="margin:8px 0 14px">A GravelLift 10 plus the Starter Bundle add-on, so a new owner has spare diffusers and airline from day one. Schools, offices and aquarium clubs can ask about the Classroom &amp; Office Pack with volume pricing.</p>
+        <button class="btn btn-light btn-sm" type="button" data-buy="GravelLift 10 Starter Bundle">Buy the Starter Bundle</button>
+      </div>
+    </div>
+    <p class="note">All prices in US dollars.</p>
+  </div>
+</section>
+
+<!-- ========== WHY ========== -->
+<section class="section" id="why" aria-labelledby="why-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why GravelLift</p>
+      <h2 id="why-h">Traditional Gravel Wasn't Designed for Easy Cleaning.</h2>
+      <p class="lead">Most options solve one piece of the puzzle: a substrate, a filter, or a cleaning tool. GravelLift combines all three in a removable design.</p>
+    </div>
+    <div class="legend-row" aria-hidden="true"><span><i class="mark yes">✓</i> Yes</span><span><i class="mark part">~</i> Partly</span><span><i class="mark no">✕</i> No</span></div>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table (scrolls sideways on small screens)">
+      <table class="compare">
+        <caption class="sr-only">Comparing loose gravel, gravel vacuums, undergravel filters and GravelLift</caption>
+        <thead><tr><th scope="col" style="text-align:left">&nbsp;</th><th scope="col">Traditional loose gravel</th><th scope="col">Gravel vacuums</th><th scope="col">Undergravel filters</th><th scope="col" class="gl">GravelLift</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Natural-looking substrate</th>
+            <td><i class="mark yes">✓</i><small>Yes</small></td><td><i class="mark part">~</i><small>Works with the gravel you already have</small></td><td><i class="mark yes">✓</i><small>Sits under loose gravel</small></td><td class="gl"><i class="mark yes">✓</i><small>Natural Mix pebbles</small></td></tr>
+          <tr><th scope="row">Lift-out cleaning</th>
+            <td><i class="mark no">✕</i><small>Scoop and rinse by hand</small></td><td><i class="mark no">✕</i><small>Siphon section by section</small></td><td><i class="mark no">✕</i><small>Tear down the tank</small></td><td class="gl"><i class="mark yes">✓</i><small>Lifts out as one piece</small></td></tr>
+          <tr><th scope="row">Built-in water circulation</th>
+            <td><i class="mark no">✕</i><small>None</small></td><td><i class="mark no">✕</i><small>A cleaning tool, not a filter</small></td><td><i class="mark yes">✓</i><small>Air-driven lift tube</small></td><td class="gl"><i class="mark yes">✓</i><small>Two air-driven airlift tubes</small></td></tr>
+          <tr><th scope="row">Access to the space beneath the gravel</th>
+            <td><i class="mark no">✕</i><small>Only by removing it all</small></td><td><i class="mark no">✕</i><small>Cleans mainly the top layer</small></td><td><i class="mark no">✕</i><small>Debris builds up where it's hard to reach</small></td><td class="gl"><i class="mark yes">✓</i><small>Reachable every time the slab is lifted</small></td></tr>
+          <tr><th scope="row">No loose gravel to handle while cleaning</th>
+            <td><i class="mark no">✕</i><small>Hundreds of loose pebbles</small></td><td><i class="mark no">✕</i><small>Stray pebbles can clog the hose</small></td><td><i class="mark no">✕</i><small>Loose gravel sits on top</small></td><td class="gl"><i class="mark yes">✓</i><small>Pebbles are locked to the plate</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">GravelLift makes cleaning the gravel bed easier, but it does not replace general tank care. The trade-offs: it costs more up front than a bag of gravel, and it is made for tanks with a floor of about 20 × 10 inches.</p>
+  </div>
+</section>
+
+<!-- ========== FIT GUIDE ========== -->
+<section class="section bg-water" id="fit" aria-labelledby="fit-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Tank Fit Guide</p>
+      <h2 id="fit-h">Find Your Perfect Fit.</h2>
+      <p class="lead">GravelLift is cut to fit the tank floor, so the inside length and width matter most. Pick your tank, or type your own measurements.</p>
+    </div>
+    <div class="fit">
+      <form id="fitForm" class="card" novalidate>
+        <div class="form-grid">
+          <div class="full"><label for="tankSize">Tank size</label>
+            <select id="tankSize">
+              <option value="">Choose a tank size…</option>
+              <option value="5.5">5.5 gallon</option>
+              <option value="10">10 gallon (standard)</option>
+              <option value="20h">20 gallon high</option>
+              <option value="20l">20 gallon long</option>
+              <option value="29">29 gallon</option>
+              <option value="40b">40 gallon breeder</option>
+              <option value="other">Other / I'll enter my own</option>
+            </select></div>
+          <div><label for="tankL">Tank length (inches)</label><input id="tankL" type="number" inputmode="decimal" min="1" max="120" step="0.25" placeholder="e.g. 20"></div>
+          <div><label for="tankW">Tank width (inches)</label><input id="tankW" type="number" inputmode="decimal" min="1" max="120" step="0.25" placeholder="e.g. 10"></div>
+        </div>
+        <p class="hint">Measure the <strong>inside floor</strong> of your tank. Glass thickness and trim can change the numbers, so check your actual internal measurements before buying.</p>
+      </form>
+      <div>
+        <div class="result idle" id="fitResult" aria-live="polite">
+          <span class="tag">Waiting for your tank</span>
+          <h3>Choose a tank to see your match</h3>
+          <p>We'll compare your tank floor with the GravelLift lineup.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section class="section" id="learn" aria-labelledby="learn-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Getting started</p>
+      <h2 id="learn-h">Set it up, clean it, replace parts.</h2>
+      <p class="lead">A printed quick-start card and fit guide come in every box, plus a setup video for every size.</p>
+    </div>
+    <div class="edu-grid">
+      <div class="card">
+        <h3>What's in the box</h3>
+        <div class="table-wrap" style="border:none;box-shadow:none">
+        <table class="box-table">
+          <thead><tr><th scope="col">Item</th><th scope="col">Qty</th></tr></thead>
+          <tbody>
+            <tr><td>GravelLift slab (vent plate + Natural Mix pebble modules)</td><td>1</td></tr>
+            <tr><td>Clear riser tube with top housing and swivel nozzle</td><td>2</td></tr>
+            <tr><td>Ceramic nano-bubble diffuser (pre-installed)</td><td>2</td></tr>
+            <tr><td>Airline tubing, quick-release couplings and check valve</td><td>1 set</td></tr>
+            <tr><td>Printed quick-start card and fit guide</td><td>1</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout"><strong>Air pump sold separately.</strong> To keep the price low we leave the pump out. Most tank owners already have one, and standard air pumps are inexpensive and easy to find. The risers ship detached so the box stays flat.</div>
+      </div>
+      <div class="card">
+        <h3>Installation guide</h3>
+        <ol class="install">
+          <li><span><strong>Place the slab.</strong> Set GravelLift on the bottom of the empty tank.</span></li>
+          <li><span><strong>Snap in the risers.</strong> Click the two clear tubes into their base collars at the back corners.</span></li>
+          <li><span><strong>Connect the air.</strong> Run the airline from a standard air pump, with the check valve above the water line.</span></li>
+          <li><span><strong>Fill the tank.</strong> Add water and turn on the pump. Setup takes under ten minutes.</span></li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Care &amp; maintenance</h3>
+        <ul class="ticks">
+          <li><span><strong>Rinse:</strong> after lifting the slab out, rinse it under a faucet or in a tub, then lower it back in.</span></li>
+          <li><span><strong>Diffusers:</strong> twist out of the base collar and should be swapped every few months as mineral deposits clog them.</span></li>
+          <li><span><strong>Tubes &amp; airline:</strong> replace cracked or cloudy tubes with a tube kit, and refresh the airline and check valve with an airline kit.</span></li>
+          <li><span><strong>Pebble modules:</strong> clip on with mechanical anchors, so a single module can be replaced.</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Flow-control &amp; fine-tuning</h3>
+        <p>Each airlift has a flow-control dial to set the bubble rate, and a swivel nozzle you can aim to set the circulation. A nozzle tip ring twists to adjust flow.</p>
+        <img src="assets/a5-top-labelled.webp" alt="Labelled Illustration of the swivel outflow nozzle, nozzle tip ring, top housing, riser tube and airline check valve" loading="lazy" style="border-radius:14px;border:2px solid var(--water)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="section bg-mist" id="about" aria-labelledby="about-h">
+  <div class="container about">
+    <div>
+      <p class="eyebrow">About GravelLift</p>
+      <h2 id="about-h">We Believe Fishkeeping Should Be Fun, Not a Chore.</h2>
+      <p class="lead">GravelLift started with one simple idea: make a beautiful fish tank easy to keep clean. Loose gravel traps waste and food, and cleaning it means a siphon session or scooping out every pebble. We wanted a substrate that keeps the natural look owners love, and lifts out in one piece.</p>
+      <p>Every decision, from the fold-down handles to the quick-release air port, is aimed at shortening the time between "my tank is dirty" and "my tank is clean." We're a small founding team focused on design, brand and customers — and we want keeping fish to feel fun again.</p>
+      <p>We care about convenience, careful engineering, and a product that a first-time fishkeeper can use as easily as an experienced one.</p>
+    </div>
+    <div class="about-art">
+      <img class="logo" src="assets/logo.png" alt="GravelLift logo: two smiling fish swimming above blue pebbles" loading="lazy">
+      <svg class="fish" style="width:80px;left:6%;top:8%" aria-hidden="true"><use href="#fish-pink"/></svg>
+      <svg class="fish f2" style="width:70px;right:6%;bottom:8%" aria-hidden="true"><use href="#fish-orange"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SUPPORT / FAQ ========== -->
+<section class="section" id="support" aria-labelledby="support-h">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Support</p>
+      <h2 id="support-h">FAQ and support</h2>
+    </div>
+    <div id="faq" style="max-width:860px">
+      <details><summary>Will GravelLift fit my tank?</summary><div class="ans">GravelLift 10 is made for a standard 10-gallon tank, with a floor of about 20 × 10 inches. Try the <a href="#fit">Tank Fit Guide</a>, and measure the inside floor of your tank before you buy.</div></details>
+      <details><summary>How do I clean it?</summary><div class="ans">Turn off the air pump, twist the quick-release coupling, unfold the handles and lift the slab out with both tubes attached. The airline and check valve stay with the tank. Rinse the slab under a faucet or in a tub, then lower it back in and reconnect.</div></details>
+      <details><summary>Does it filter the water?</summary><div class="ans">GravelLift uses quiet, air-driven circulation, working like a built-in undergravel filter. Rising bubbles lift water up each tube, which draws tank water down through the pebbles and slots, under the plate and back to the riser.</div></details>
+      <details><summary>Do I need an air pump?</summary><div class="ans">Yes. GravelLift runs on a standard external air pump, which is sold separately. There are no electrical parts in the water.</div></details>
+      <details><summary>What replacement parts are available?</summary><div class="ans">A Nano-Bubble Diffuser 2-Pack ($9.99), Airlift Tube Kit ($14.99), Airline + Check Valve Kit ($7.99) and a Starter Bundle Add-On ($14.99). Diffusers should be swapped every few months as they clog with mineral deposits.</div></details>
+      <details><summary>Is GravelLift available now?</summary><div class="ans">Yes. GravelLift 10 is available now for $54.99.</div></details>
+      <details><summary>Does GravelLift remove all aquarium maintenance?</summary><div class="ans">No. It's designed to make cleaning the gravel bed far easier, but it doesn't replace general tank care.</div></details>
+    </div>
+
+    <div class="support-grid" style="margin-top:40px">
+      <div class="card" id="contact"><h3>Contact</h3><p>Email support: <span class="placeholder">support@your-domain.example (placeholder)</span></p><p style="margin:0">Social accounts: <span class="placeholder">add your links</span></p></div>
+      <div class="card" id="shipping"><h3>Shipping &amp; returns</h3><p style="margin:0">Every GravelLift comes with a 90-day satisfaction guarantee. <span class="placeholder">Add shipping rates and return terms</span></p></div>
+      <div class="card" id="privacy"><h3>Privacy policy</h3><p style="margin:0"><span class="placeholder">Add your privacy policy</span> Newsletter emails are only used for GravelLift updates.</p></div>
+      <div class="card" id="terms"><h3>Terms</h3><p style="margin:0"><span class="placeholder">Add your terms of use</span></p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer" id="signup">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top"><img src="assets/logo.png" alt="" width="46" height="46"><span>GravelLift</span></a>
+        <p>Lift it. Rinse it. Done.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#contact" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#contact" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.4 2.6 2 4 4.5 4.2"/></svg></a>
+          <a href="#contact" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#product">Shop</a></li><li><a href="#how">How It Works</a></li><li><a href="#fit">Tank Fit Guide</a></li><li><a href="#about">About</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="#shipping">Shipping &amp; Returns</a></li><li><a href="#privacy">Privacy Policy</a></li><li><a href="#terms">Terms</a></li></ul></div>
+      <div>
+        <h4>Join our newsletter</h4>
+        <p style="font-size:.95rem">News, tips and new products from GravelLift.</p>
+        <!-- INTEGRATION POINT: connect this form to your email service (Shopify, Mailchimp, Klaviyo, etc.) -->
+        <form class="signup" id="signupForm" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit" style="background:var(--aqua);color:var(--navy)">Sign up</button>
+        </form>
+        <p class="signup-msg" id="signupMsg" role="status"></p>
+      </div>
+    </div>
+    <div class="legal"><span>© GravelLift. All rights reserved.</span><span><a href="#top">Back to top ↑</a></span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="mobile-cta"><a class="btn btn-primary" href="#product">Shop GravelLift 10</a></div>
+
+<dialog id="demoDlg" aria-labelledby="demoTitle">
+  <div class="dlg-head"><h3 id="demoTitle">Full demonstration</h3><button type="button" id="demoClose" aria-label="Close">✕</button></div>
+  <div class="demo-frame" role="img" aria-label="Looping animation of the slab and both tubes lifting out of the tank together">
+    <div class="a"><img src="assets/model-clean.webp" alt=""></div>
+    <div class="b"><img src="assets/liftout-clean.webp" alt=""></div>
+  </div>
+  <p class="demo-cap"><strong>This animation is built from our product illustrations. It is not a recording.</strong> A video demonstration is coming soon.</p>
+</dialog>
+
+<script src="app.js"></script>
+</body>
+</html>
